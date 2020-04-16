@@ -1,7 +1,7 @@
 window.dom = {
   create(string){
     const container = document.createElement('template')
-    // template 标签可容纳任何元素，div 则不行
+    // template 标签可容纳任何元素，div 则不行，如 td 就不能在 div 中
     container.innerHTML = string
     return container.content.firstChild
   },
